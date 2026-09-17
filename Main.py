@@ -144,3 +144,7 @@ def subscribe_esim(user_id: int):
     conn.close()
     return {"status": "success", "message": "تم تفعيل اشتراك الإنترنت بنجاح!"}
 
+@app.get("/")
+def home():
+    return {"status": "online"}
+    
